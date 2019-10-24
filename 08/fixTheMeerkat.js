@@ -7,11 +7,20 @@
 //   return [head, body, tail];
 // }
 
-function fixTheMeerkat(arr) {
-  const [tail, body, head] = arr;
+// function fixTheMeerkat(arr) {
+//   const [tail, body, head] = arr;
 
-  return [head, body, tail];
+//   return [head, body, tail];
+// }
+
+function fixTheMeerkat(arr) {
+  const tail = arr.shift();
+  const head = arr.pop();
+  arr.unshift(head);
+  arr.push(tail);
+  return arr;
 }
+
 
 
 
