@@ -25,11 +25,11 @@
 //   return arr;
 // }
 
-function fixTheMeerkat([tail, body, head]) {
-  return [head, body, tail];
-}
+// function fixTheMeerkat([tail, body, head]) {
+//   return [head, body, tail];
+// }
 
-
+const fixTheMeerkat = ([tail, body, head]) => [head, body, tail];
 
 
 console.log(fixTheMeerkat(['tail', 'body', 'head']), ['head', 'body', 'tail']);
