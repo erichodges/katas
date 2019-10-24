@@ -13,15 +13,21 @@
 //   return [head, body, tail];
 // }
 
-function fixTheMeerkat(arr) {
-  const tail = arr.shift();
-  const head = arr.pop();
-  arr.unshift(head);
-  arr.push(tail);
-  return arr;
+// function fixTheMeerkat(arr) { // ['tail', 'body', 'head']
+//   const tail = arr.shift();
+//   console.log(arr)
+//   const head = arr.pop();
+//   console.log(arr)
+//   arr.unshift(head);
+//   console.log(arr)
+//   arr.push(tail);
+//   console.log(arr)
+//   return arr;
+// }
+
+function fixTheMeerkat([tail, body, head]) {
+  return [head, body, tail];
 }
-
-
 
 
 
