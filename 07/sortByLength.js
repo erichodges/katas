@@ -12,8 +12,8 @@
 // }
 
 function sortByLength(array) {
-  array.sort((a, b) => a.length - b.length);
-  return array;
+  return array.sort((a, b) => a.length - b.length);
+  
 }
 
 console.log(sortByLength(["beg", "life", "i", "to"]), ["i", "to", "beg", "life"]);
