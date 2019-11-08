@@ -18,7 +18,7 @@ function gap(num) {
       //check if current longest segment is greater than overall longest segment
       if (currentLongestSegment > longestSegment) {
         // if so, update overall longest segment
-        logestSegment = currentLongestSegment;
+        longestSegment = currentLongestSegment;
       }
       // reset current logest segment to 0
       currentLongestSegment = 0;
