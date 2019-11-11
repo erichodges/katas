@@ -35,14 +35,33 @@
 
 // (s) => Math.max (...(s.replace(/1/g, ' ').split(' ').map (s => s.length)))
 
-function gap(num) {
-  const binaryString = num.toString(2);
+// function gap(num) {
+//   const binaryString = num.toString(2);
 
+//   let longestSegment = 0;
+//   let currentLongestSegment = 0;
+
+//   for (let i = 0; i < binaryString.length; i++) {
+//     const bit = binaryString[i];
+//     if (bit == 1) {
+//       if (currentLongestSegment > longestSegment) {
+//         longestSegment = currentLongestSegment;
+//       }
+//       currentLongestSegment = 0;
+//     } else {
+//       currentLongestSegment += 1;
+//     }
+//   }
+
+//   return longestSegment;
+// }
+
+function gap(num) {
   let longestSegment = 0;
   let currentLongestSegment = 0;
 
-  for (let i = 0; i < binaryString.length; i++) {
-    const bit = binaryString[i];
+  for (let i = 0; i < 32; i++) {
+    const bit = (num >>> i) & 1;
     if (bit == 1) {
       if (currentLongestSegment > longestSegment) {
         longestSegment = currentLongestSegment;
